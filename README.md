@@ -169,18 +169,17 @@ where kᵢ are nodal strengths of the healthy reference network and C is its wir
 
 ## Computational Requirements
 
-| Script |   RAM  |      CPU      | Bottleneck                      |
-|        |        | (40 workers)  |                                 |
-|--------|--------|---------------|---------------------------------|
-| 01     | ~4 GB  | ~20 min       | GEO download                    |
-| 02     | ~2 GB  | ~5 min        | bicor (p≤800)                   |
-| 02b    | ~32 GB | ~30–60 min    | bicor (p=14k), blockwiseModules |
-| 03     | ~4 GB  | ~10 min       | 100 bootstrap × 4 metrics       |
-| 03b    | ~16 GB | ~20 min       | 1000 permutations (EG+Hb)       |
-| 04     | ~8 GB  | ~5 min        | TRI rank-1 (p≤800)              |
-| 04b    | ~32 GB | ~15 min       | TRI rank-1 (p≤1500)             |
-| 04c    | ~4 GB  | ~5 min        | limma + enrichGO                |
-| 05     | ~2 GB  | <1 min        | File consolidation              |
+| Script |   RAM  | CPU (40 workers) | Bottleneck                      |
+|--------|--------|------------------|---------------------------------|
+| 01     | ~4 GB  | ~20 min          | GEO download                    |
+| 02     | ~2 GB  | ~5 min           | bicor (p≤800)                   |
+| 02b    | ~32 GB | ~30–60 min       | bicor (p=14k), blockwiseModules |
+| 03     | ~4 GB  | ~10 min          | 100 bootstrap × 4 metrics       |
+| 03b    | ~16 GB | ~20 min          | 1000 permutations (EG+Hb)       |
+| 04     | ~8 GB  | ~5 min           | TRI rank-1 (p≤800)              |
+| 04b    | ~32 GB | ~15 min          | TRI rank-1 (p≤1500)             |
+| 04c    | ~4 GB  | ~5 min           | limma + enrichGO                |
+| 05     | ~2 GB  | <1 min           | File consolidation              |
 
 ### Required R packages
 
@@ -256,7 +255,7 @@ results/
 └── summary/                    # Cross-dataset consolidated tables
 ```
 
-### Key output files for the paper
+### Key output files
 
 | File | Content |
 |------|---------|
@@ -303,6 +302,9 @@ Gene classes (mutually exclusive, evaluated in priority order):
 ---
 
 ## Author 
-Daniel Pérez Calixto
+
+- Daniel Pérez Calixto -
+
 Instituto Nacional de Médicina Genómica
+
 Contact info: dperez@inmegen.gob.mx
