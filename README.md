@@ -303,7 +303,7 @@ Gene classes (mutually exclusive, evaluated in priority order):
 
 ## Author 
 
-- Daniel Pérez Calixto -
+Daniel Pérez Calixto
 
 Instituto Nacional de Médicina Genómica
 
