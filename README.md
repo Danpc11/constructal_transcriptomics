@@ -1,4 +1,4 @@
-# Constructal Architecture of the Pancreatic Islet Transcriptome in Type 2 Diabetes
+# Constructal Architecture of the Transcriptome in Type 2 Diabetes
 
 ## Theoretical Framework
 
